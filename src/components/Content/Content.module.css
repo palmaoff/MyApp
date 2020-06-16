@@ -1,0 +1,15 @@
+.content {
+	display: grid;
+	grid-template-areas: "b np";
+	grid-template-columns: 1fr 1fr;
+}
+
+.new_post {
+	grid-area: np;
+	padding: 10px;
+	background-color: blanchedalmond;
+}
+
+.blog {
+	grid-area: b;
+}

@@ -1,0 +1,24 @@
+.item {
+    display: grid;
+    grid-template-areas: 
+    "a m";
+    grid-template-columns: 30px 3fr;
+    background-color: coral;
+    padding: 2px 5px;
+}
+
+.item img {
+    grid-area: a;
+    width: 30px;
+    border-radius: 50px;
+}
+
+.message {
+    grid-area: m;
+}
+
+.message div {
+    width: 1fr;
+    margin: 0px 0px 0px 10px;
+    padding: 3px;
+}
