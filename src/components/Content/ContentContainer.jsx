@@ -11,23 +11,23 @@ const ContentContainer = (props) => {
 	)
 
 	return (
-		<Content NewPost = { NewPost }
-			Posts = { state.content.Posts } />
+		<Content 
+			Posts = { state.content.Posts }
+		/>
 	)
 }
 
-// let mapStateToProps = (state) => {
+let mapStateToProps = (state) => {
+	return {
+		Posts: state.content.Posts
+	}
+}
 
-// 	const NewPost = (
-// 		<NewPostContainer store={props.store} />
-// 	) // trouble with store... fix it
+let mapDispatchToProps = (dispatch) => {
+	return {
+	}
+}
 
-// 	return {
-// 		NewPost: NewPost,
-// 		Posts: state.content.Posts
-// 	}
-// }
-
-// const ContentContainerToo = connect(mapStateToProps)(Content)
+const ContentContainerToo = connect(mapStateToProps, mapDispatchToProps)(Content)
 
 export default ContentContainer

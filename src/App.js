@@ -7,6 +7,7 @@ import NewPostContainer from './components/Content/NewPost/NewPostContainer'
 import ContentContainer from './components/Content/ContentContainer'
 
 const App = (props) => {
+	let state = props.store.getState()
 	return (
 		<BrowserRouter>
 			<div className='app-wrap'>
@@ -14,13 +15,16 @@ const App = (props) => {
 				<Nav />
 				<div className='app-wrap-content'>
 					<Route path='/blog'
-						render={() => <ContentContainer
-							store={props.store} />
-						} />
+						render={() =>
+							<ContentContainer
+								store={props.store}
+							/>
+						}
+					/>
 				</div>
 			</div>
 		</BrowserRouter>
 	);
 }
 
-export default App;
+export default App

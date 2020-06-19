@@ -22,14 +22,17 @@ const NewPost = (props) => {
 		let text = newPost.current.value
 		props.updateField(text)
 	}
+
 	return (
 		<div>
 			<div>
-				<textarea ref={newPost}
+				<textarea
+					ref={newPost}
 					onChange={ChangeField}
 					value={props.FieldText}
 					onKeyPress={enterKey}
-					placeholder="Enter something" />
+					placeholder="Enter something"
+				/>
 			</div>
 			<div>
 				<button onClick={onAddPost}>add post</button>
