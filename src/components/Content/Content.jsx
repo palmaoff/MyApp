@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './Content.module.css'
 import Post from './Post/Post'
-import NewPost from './NewPost/NewPost'
+import NewPostContainer from './NewPost/NewPostContainer'
 
 const Content = (props) => {
 
@@ -13,7 +13,7 @@ const Content = (props) => {
 				{blogElements}
 			</div>
 			<div className={css.new_post}>
-				<NewPost />
+				<NewPostContainer />
 			</div>
 		</div>
 	);

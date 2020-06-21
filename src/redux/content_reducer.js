@@ -25,19 +25,22 @@ export const addPostActionCreator = (text) => {
 let content_reduce = (state = init_state, action) => {
 	switch (action.type) {
 		case ADD_POST:
+			let stateAdd = {...state}
+			stateAdd.Posts = [...state.Posts]
 			let newPost = {
 				id: state.Posts[0].id + 1,
 				message: action.text
 			}
 			if (action.text != false) {
-				state.Posts.unshift(newPost)
+				stateAdd.Posts.unshift(newPost)
 			}
-			return state
+			return stateAdd
 		case NEW_FIELD_TEXT:
+			let stateField = {...state}
 			if (action.text !== '\n') {
-				state.FieldText = action.text
+				stateField.FieldText = action.text
 			}
-			return state
+			return stateField
 		default:
 			return state
 	}
