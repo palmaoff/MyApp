@@ -1,11 +1,8 @@
-import { React } from 'react'
+import React from 'react'
 
 const User = (props) => {
-	debugger
 	return (
-		<div>
-			{props.name}
-		</div>
+		<div>{props.name}</div>
 	)
 }
 

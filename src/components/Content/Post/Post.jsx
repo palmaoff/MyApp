@@ -8,7 +8,7 @@ const Post = (props) => {
 				<img src = 'https://i.mycdn.me/i?r=AzEPZsRbOZEKgBhR0XGMT1RkiLiYuaJJi94n5n3y1sJXmaaKTM5SRkZCeTgDn6uOyic'></img>
 			</div>
 			<div className={css.message}>
-				<div >{props.message}</div>
+				<div>{props.message}</div>
 			</div>
 		</div>
 	);

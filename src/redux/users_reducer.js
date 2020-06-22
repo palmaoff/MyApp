@@ -1,13 +1,7 @@
 let init_state = {
 	Users: [
-		{
-			id: 1,
-			name: 'John'
-		},
-		{
-			id: 2,
-			name: 'Tony'
-		}
+		{ id: 1, name: 'John' },
+		{ id: 2, name: 'Tony' }
 	]
 }
 

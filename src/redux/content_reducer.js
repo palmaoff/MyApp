@@ -38,7 +38,6 @@ let content_reduce = (state = init_state, action) => {
 			}
 			return stateCopy
 		case NEW_FIELD_TEXT:
-			let stateField = { ...state }
 			if (action.text !== '\n') {
 				stateCopy.FieldText = action.text
 			}
