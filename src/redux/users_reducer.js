@@ -1,8 +1,12 @@
 let init_state = {
 	Users: [
 		{
-			id: 1, 
-			email: 'first_email@test.ru'
+			id: 1,
+			name: 'John'
+		},
+		{
+			id: 2,
+			name: 'Tony'
 		}
 	]
 }

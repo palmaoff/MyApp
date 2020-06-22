@@ -3,8 +3,8 @@ import './App.css'
 import Header from './components/Header/Header'
 import Nav from './components/Navbar/Nav'
 import { Route, BrowserRouter } from 'react-router-dom'
-import NewPostContainer from './components/Content/NewPost/NewPostContainer'
 import ContentContainer from './components/Content/ContentContainer'
+import UsersContainer from './components/Users/UsersContainer';
 
 const App = (props) => {
 	let state = props.store.getState()
@@ -19,6 +19,11 @@ const App = (props) => {
 							<ContentContainer
 								store={props.store}
 							/>
+						}
+					/>
+					<Route path='/users'
+						render={() =>
+							<UsersContainer />
 						}
 					/>
 				</div>
