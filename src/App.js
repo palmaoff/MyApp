@@ -7,7 +7,6 @@ import ContentContainer from './components/Content/ContentContainer'
 import UsersContainer from './components/Users/UsersContainer';
 
 const App = (props) => {
-	let state = props.store.getState()
 	return (
 		<BrowserRouter>
 			<div className='app-wrap'>
@@ -16,9 +15,7 @@ const App = (props) => {
 				<div className='app-wrap-content'>
 					<Route path='/blog'
 						render={() =>
-							<ContentContainer
-								store={props.store}
-							/>
+							<ContentContainer />
 						}
 					/>
 					<Route path='/users'
